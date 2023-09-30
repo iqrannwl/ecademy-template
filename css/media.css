@@ -1,0 +1,58 @@
+/* 
+  @media screen and (min-width < 1000px) {
+      span {
+        font-size: 12px;
+      }
+  }
+
+
+@media screen and (min-width: 1032px) {
+    span {
+      font-size: 8px; 
+    }
+}
+
+
+@media screen and (min-width: 1018px) {
+    span {
+      font-size: 8px; 
+    }
+}
+
+@media screen and (min-width < 1016px) {
+    span {
+      font-size: 8px; 
+    }
+}
+
+@media screen and (min-width < 995px) {
+    span {
+      font-size: 8px; 
+    }
+}
+
+
+@media screen and (min-width < 992px) {
+    span {
+      font-size: 8px; 
+    }
+}
+
+@media screen and (min-width < 322px) {
+    span {
+      font-size: 8px; 
+    }
+} */
+
+@media (322 <= width <= 1118) {
+    .group-a{
+        position:absolute;
+        right:50%;
+    }
+}
+
+@media (322 <= width <= 1118){
+    span {
+        font-size: 8px; 
+      }
+}

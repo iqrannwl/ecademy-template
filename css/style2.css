@@ -1,0 +1,181 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  @font-face {
+  font-family: Metropolis-Regular;
+  src: url("../fonts/metropolis/Metropolis-Regular.otf");
+  }
+  
+  @font-face {
+  font-family: Metropolis-Bold;
+  src: url("../fonts/metropolis/Metropolis-Bold.otf");
+  font-weight: bold;
+  }
+  
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  }
+  
+  
+  :root {
+    --primaery-color:#5F31DC;
+    --white:#fff;
+    --black:#000;
+    --gray:#ccc;
+    --light-gray:#f7f7f7;
+    --dark-gray:#333;
+    --light-black:#222;
+    --light-blue:#007bff;
+    --light-red:#dc3545;
+    --light-green:#28a745;
+    --dark-blue:#231759;
+    --plain-2-color-1:#7A16D0;
+    --plain-2-color-2:#A84CF5;
+    --plan-3-color-1:#ED115D;
+    --plan-3-color-2:#F86A39;
+    --top-title-font-size:12px;
+    --main-header-title-font-size:clamp(2rem , 4rem , 5rem);
+    --nav-link-font-size:100%;
+    --animation-color-1: #6e2de9;
+    --animation-color-2 :#bbaaff;
+    --animation-color-3 :#722fec;
+    --light-gray: #f7f7f7;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: Metropolis-Regular !important;
+  
+  }
+  
+  p , div , span{
+  font-family: Metropolis-Regular !important;
+  
+  }
+  
+  h1 , h2 , h3 , h4 , h5 , h6{
+  font-family: Metropolis-Bold !important;
+  }
+  
+
+  /* Top HEADER */
+  .top-text-title{
+    font-size:var(--top-title-font-size);
+    color:var(--white);
+    line-height:20px;
+    font-weight:bold;
+    }
+
+.top-header{
+    background-color: var(--primaery-color);
+    padding: 10px 0;
+    }
+
+.text-box{
+    padding:5px 10px;
+    background-color: var(--white);
+    }
+
+
+/* Nav bar */
+.header {
+    background-image:url("../images/sub-header.png");
+    background-size:cover;
+    background-position:bottom;
+    background-repeat:no-repeat;
+    scrollbar-darkshadow-color: #007bff;
+  }
+
+.logo{
+    width: 180px !important;
+    height: 28px !important;
+  }
+
+
+  .nav-item{
+    color:var(--white) !important;
+    margin:0px 25px !important;
+
+    text-transform:uppercase;
+  }
+  
+  .nav-link{
+    font-size:var(--nav-link-font-size) !important;
+  color:var(--white) !important;
+  font-family: sans-serif !important;
+  }
+  
+  .nav-item:first-child{
+  color:var(--white) !important;
+  margin:0;
+  font-size:var(--nav-link-font-size) !important;
+  text-transform:uppercase;
+  }
+
+  .header::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  
+  .main-header-title{
+    font-weight:bold;
+    font-size: var(--main-header-title-font-size);
+    color: var(--white);
+  }
+
+
+  .navbar-side-box{
+    width: 335px !important;
+    color: var(--white);
+    font-size: 1rem;
+  }
+
+/* Commons */
+.text-gradient{
+    font-size:var(--top-title-font-size);
+    background: linear-gradient(to right, var(--primaery-color) 100%, var(--light-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .rounded-corner{
+    border-radius:60px/60px;
+  }
+
+  .text-animation {
+    animation-name: moveBackgroundGradient;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(circle closest-corner at 42% -100%,var(--animation-color-1),rgba(237,155,169,0)),linear-gradient(103deg,var(--animation-color-1) 10%, var(--animation-color-2) 50%,var(--animation-color-3) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-color:red !important;
+}
+
+.card{
+  background-color:transparent !important;
+  }
