@@ -7,3 +7,11 @@ deploy:
 
 diff: 
 	sudo git diff
+
+#  deploye git username and token
+#  username: hassamkhalid
+#  token: ghp_
+#
+
+
+# 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
